@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get install -y git
 
 # Clone validator, link to ours now
-RUN git clone https://github.com/kevinsafon/gtfs-realtime-validator.git /root/gtfs-realtime-validator/
+RUN git clone -b 251_our_ui_changes https://github.com/kevinsafon/gtfs-realtime-validator.git /root/gtfs-realtime-validator/
 
 # Change to correct directory
 WORKDIR /root/gtfs-realtime-validator/
